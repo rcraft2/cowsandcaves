@@ -1,0 +1,300 @@
+html {
+  background-color: black;
+  background-image: url("https://pbs.twimg.com/media/EmMIPsGXcAEpbBy?format=jpg&name=medium");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+#hi {
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(0, 0, 250);
+  -webkit-text-stroke: 1px white;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0px 9px 0px rgb(0, 0, 150);
+
+}
+button {
+  background-color: rgb(0, 0, 150);
+  border: none;
+  color: white;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 7px;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+button:hover {background-color: rgb(0, 0, 90)}
+p {
+  font-size: 15px;
+}
+#olddiv {
+    width:100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.floor {
+    position: relative;
+    bottom:0;
+    display: block;
+    float: left;
+    width: 10%;
+    height: 10vh;
+}
+
+#getname {
+  width:30%;
+  height:30%;
+  background-color: black;
+  color: white;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left:35vw;
+  bottom:40vh;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+#cmon {
+  width:30%;
+  height:30%;
+  display: block;
+  margin: auto;
+  left:35vw;
+  bottom:40vh;
+}
+
+#fname {
+  vertical-align: middle;
+  color: black;
+}
+
+label {
+  display:block;
+  padding:20px;
+  color: white;
+}
+
+#container {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: block;
+
+
+}
+#cowboy {
+  position: absolute;
+  bottom:10vh
+}
+#monster1 {
+  position: absolute;
+  left:80px;
+  bottom:10vh
+}
+#bigspace {
+  font-size: 21vh;
+}
+
+#playercard {
+  width:20%;
+  height:20%;
+  color: white;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left:70vw;
+  bottom:45vh;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#playername {
+  cursor: default;
+}
+
+#musicbutton {
+  background-color: rgb(0, 0, 150);
+  border: none;
+  position: absolute;
+  color: white;
+  width: 15.6%;
+  height: 50px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: block;
+  left:42.2%;
+  top:15%;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 7px;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+#musicbutton:hover {background-color: rgb(0, 0, 90)}
+
+#sefbutton {
+  background-color: rgb(0, 0, 150);
+  border: none;
+  position: absolute;
+  color: white;
+  width: 15.6%;
+  height: 50px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: block;
+  left:42.2%;
+  top:25%;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 7px;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+#sefbutton:hover {background-color: rgb(0, 0, 90)}
+
+#settingstohome {
+  background-color: rgb(0, 0, 150);
+  border: none;
+  position: absolute;
+  color: white;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: block;
+  left:10%;
+  top:15%;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 7px;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+#settingstohome:hover {background-color: rgb(0, 0, 90)}
+#gametohome {
+  background-color: rgb(0, 0, 150);
+  border: none;
+  position: absolute;
+  color: white;
+  width: 4.7%;
+  height: 4.5%;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: block;
+  left:1%;
+  top:5%;
+  font-size: 16px;
+  vertical-align: middle;
+  left: 15%;
+  top: 6%;
+  border-radius: 7px;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+#gametohome:hover {background-color: rgb(0, 0, 90)}
+#shoptohome {
+  background-color: rgb(0, 0, 150);
+  border: none;
+  position: absolute;
+  color: white;
+  width: 7%;
+  height: 7%;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: block;
+  left:1%;
+  top:5%;
+  font-size: 16px;
+  vertical-align: middle;
+  left: 15%;
+  top: 6%;
+  border-radius: 7px;
+  cursor: url("https://pbs.twimg.com/media/EmMOnTqXEAAXFPH?format=png&name=120x120") 25 15, auto;
+}
+#gametohome:hover {background-color: rgb(0, 0, 90)}
+
+#gamebg {
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+
+}
+#gamescreen {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#gamescreen:-webkit-full-screen {
+  background-image: url("https://pbs.twimg.com/media/EmMIPsGXcAEpbBy?format=jpg&name=medium");
+}
+#torch {
+  position: absolute;
+  left:620;
+  top:50;
+}
+
+#player {
+  position: absolute;
+  left:6.9%;
+  top:17.4%;
+}
+
+#rocks {
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  left:160px;
+  top:400px;
+}
+#rocks2 {
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  left:160px;
+  top:400px;
+}
+#rocks3 {
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  left:160px;
+  top:400px;
+}
+#chest {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left:1000;
+  top:150;
+}
+#leaderboard {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  background-color: black;
+  left: 10%;
+  top: 30%;
+}
+h2 {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+}

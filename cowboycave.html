@@ -1,0 +1,103 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="cowboystyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+</head>
+<body onload="begin()">
+<div id="musicdiv">
+  <audio id="music" autoplay loop>
+  <source src="My Medly-1 (audio-extractor.net).mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+  <div id="homescreen" onload="begin()">
+
+  <h1 id="title1">Cowboys and Cave</h1>
+  <h1 id="title2">Monsters</h1>
+
+  <button id="button1" onclick="startGame()">START</button>
+  <p></p>
+  <button id="button2" onclick="enterShop()">SHOP</button>
+  <p></p>
+  <button id="button3" onclick="enterSettings()">SETTINGS</button>
+  <p id="bigspace"></p>
+<div id="olddiv">
+  <div id="container">
+  <img id="cowboy" src="https://pbs.twimg.com/media/EmRiwpeXcAEgB6w?format=png&name=120x120" height="66px" width="42px">
+  <img id="monster1" src="https://pbs.twimg.com/media/EmR9sfkXUAAuFP8?format=png&name=120x120" height="66px" width="42px">
+</div>
+</div>
+  <div id="olddiv">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+  <img class="floor" src="https://pbs.twimg.com/media/EmZHc6yXMAAg-zd?format=jpg&name=tiny" height="50">
+
+</div>
+
+<div id="playercard">
+  <img id="bigSkin" onclick="changeSkin()" src="https://pbs.twimg.com/media/EmVZv2ZXYAA56kb?format=png&name=240x240" height="132" width="84">
+  <p id="playername" onclick="changeName()"></p>
+</div>
+<div id="cmon">
+<div id="getname">
+  <label for="fname">Enter user name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit" onclick="getName()">
+</div>
+</div>
+<div id="leaderboard">
+  <h2 id="LName">here</h2>
+  <h2 id="LScore"></h2>
+  <h2 id="1st"></h2>
+  <h2 id="2nd"></h2>
+  <h2 id="3rd"></h2>
+  <h2 id="4th"></h2>
+  <h2 id="5th"></h2>
+  <h2 id="1stn"></h2>
+  <h2 id="2ndn"></h2>
+  <h2 id="3rdn"></h2>
+  <h2 id="4thn"></h2>
+  <h2 id="5thn"></h2>
+</div>
+</div>
+
+
+<div id="settingsscreen">
+  <h1>SETTINGS</h1>
+  <button id="musicbutton" onclick="musicToggle()">MUSIC</button>
+  <button id="sefbutton" onclick="sefToggle()">SOUND</button>
+  <button id="settingstohome" onclick="toHome()">BACK</button>
+</div>
+
+<div id="gamescreen">
+<button id="gametohome" onclick="pauseGame()">||</button>
+<img id="gamebg" ondragstart="return false" draggable="false" src="https://pbs.twimg.com/media/EmaUjJAWMAI5DaO?format=jpg&name=medium">
+<img id="torch" ondragstart="return false" draggable="false" src="https://opengameart.org/sites/default/files/Torch_Gif.gif" height="50" width="25">
+<img id="chest" ondragstart="return false" draggable="false" src="https://pbs.twimg.com/media/EmcsboZXUAE8mtg?format=png&name=120x120">
+<img id="rocks" ondragstart="return false" draggable="false" src="https://pbs.twimg.com/media/Ema7eY5W8AABn35?format=png&name=900x900">
+<img id="rocks2" ondragstart="return false" draggable="false" src="https://pbs.twimg.com/media/Ema7eY5W8AABn35?format=png&name=900x900">
+<img id="rocks3" ondragstart="return false" draggable="false" src="https://pbs.twimg.com/media/Ema7eY5W8AABn35?format=png&name=900x900">
+<img id="player" ondragstart="return false" draggable="false" src="https://pbs.twimg.com/media/Emeu13cXEAAmynx?format=png&name=120x120">
+
+</div>
+<div id="skinss">
+  <button id="gametohome" onclick="toHome3()">BACK</button>
+</div>
+<div id="shopscreen">
+  <h1>SHOP</h1>
+  <button id="shoptohome" onclick="toHome4()">BACK</button>
+</div>
+</body>
+</html>
+<script src="cowboy.js"></script>
